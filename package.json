@@ -1,0 +1,31 @@
+{
+  "name": "zbase-utils",
+  "version": "1.0.1",
+  "description": "zbase-utils",
+  "main": "zbase-utils.js",
+  "scripts": {
+    "lint": "eslint src/**",
+    "build": "webpack -p --mode development --config webpack.config.js --progress --colors"
+  },
+  "keywords": [
+    "zbase-utils",
+    "utils",
+    "function"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zbase2020/zbase-utils.git"
+  },
+  "author": "zbase2020",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbase2020/zbase-utils/issues"
+  },
+  "homepage": "https://github.com/zbase2020/zbase-utils#readme",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
