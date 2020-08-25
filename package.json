@@ -1,6 +1,6 @@
 {
   "name": "zbase-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "zbase-utils",
   "main": "zbase-utils.js",
   "scripts": {

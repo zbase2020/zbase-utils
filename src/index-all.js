@@ -92,6 +92,9 @@ export {default as isGuid} from './otherUtil/isGuid';
 // export {default as md5Encrypt} from './otherUtil/md5Encrypt';
 // export {default as rsaEncrypt} from './otherUtil/rsaEncrypt';
 
+/* storageUtil */
+export {default as LocalSto} from './storageUtil/local'
+
 /* stringUtil */
 export {default as stringUtil} from './stringUtil/stringUtil';
 export {default as countString} from './stringUtil/countString';
