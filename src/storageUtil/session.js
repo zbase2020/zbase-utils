@@ -3,10 +3,10 @@ import isEqual from '../commonUtil/isEqual'
 import getValue from '../objectUtil/getValue'
 import setValue from '../objectUtil/setValue'
 // import { isObject, getValue, setValue, isEqual } from 'zbase-utils'
-export default class LocalSto {
+export default class SessionSto {
   // static getInstance (props) {
   //   if (!this.instance) {
-  //     this.instance = new LocalSto(props)
+  //     this.instance = new SessionSto(props)
   //   }
   //   return this.instance
   // }
@@ -14,7 +14,7 @@ export default class LocalSto {
     this.instance = null
     // name-仓库名称 data-默认值
     this.config = {
-      name: 'ZBASE_LOCALSTO',
+      name: 'ZBASE_SESSIONSTO',
       data: null
     }
     this.dataStr = ''
@@ -48,14 +48,14 @@ export default class LocalSto {
   }
   getSto (name) {
     name = name || this.config.name
-    return window.localStorage.getItem(name)
+    return window.sessionStorage.getItem(name)
   }
   setSto (name, data) {
     name = name || this.config.name
-    window.localStorage.setItem(name, data)
+    window.sessionStorage.setItem(name, data)
   }
   cleanSto () {
-    window.localStorage.removeItem(this.config.name)
+    window.sessionStorage.removeItem(this.config.name)
   }
   get (path) {
     var str = this.getSto() || '{}'

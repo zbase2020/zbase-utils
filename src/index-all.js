@@ -94,6 +94,7 @@ export {default as isGuid} from './otherUtil/isGuid';
 
 /* storageUtil */
 export {default as LocalSto} from './storageUtil/local'
+export {default as SessionSto} from './storageUtil/session'
 
 /* stringUtil */
 export {default as stringUtil} from './stringUtil/stringUtil';
