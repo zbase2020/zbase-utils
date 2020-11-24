@@ -40,7 +40,7 @@ npm i zbase-utils
 
 ## Usage
 ```js
-/* 支持多种引入方式 */
+/* 多种引入方式 */
 // import zbseUtils from 'zbase-utils'
 // import { numberUtil } from 'zbase-utils'
 // numberUtil.calculate === calculate
