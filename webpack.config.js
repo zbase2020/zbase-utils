@@ -9,6 +9,23 @@ module.exports = {
     library: 'zbaseutils',
     libraryTarget: 'umd'
   },
+  module: {
+    rules: [
+      {
+        test: /(\.jsx|\.js)$/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              "env"
+            ]
+          }
+        },
+        exclude: path.resolve(__dirname, "node_modules"),
+        include: path.resolve(__dirname, "src")
+      }
+    ]
+  },
   plugins: [
     new UglifyJsPlugin()
   ]
