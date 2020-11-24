@@ -1,0 +1,4 @@
+1、npm config set registry https://registry.npmjs.org/  先把镜像切换回npm,使用npm 安装依赖包
+2、 npm login
+3、 npm version patch   修改版本
+4、 npm publish  
